@@ -1,25 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Balance from './balance';
+
+import IncomeContext from './incomeContext';
+import Income from './income';
+import ExpenseContext from './expenseContext';
+import Expense from "./expense.js";
+import Appfront from './appFront';
+import BalanceContext from './balanceContext';
+import Front from './front';
+
+
+
+
 
 function App() {
+
+
+
+  let globalIncome = useState(0) ; // global income = total income 
+  let globalExpense = useState(0);  // global expense = total expense
+  let globalBalance = useState(0); // global balance 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <IncomeContext.Provider value={globalIncome}>
+    <ExpenseContext.Provider value ={globalExpense}>
+    <BalanceContext.Provider value = {globalBalance}>
+      
+
+    <div >
+    <Front />
+      
     </div>
+   
+    </BalanceContext.Provider>
+    </ExpenseContext.Provider>
+    </IncomeContext.Provider>
+   
+
+
   );
 }
 
