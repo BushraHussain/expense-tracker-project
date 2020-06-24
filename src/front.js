@@ -19,7 +19,7 @@ function Front()
 /******************************************Function Events for income ********************************************************** */
 
     let updateFields = e =>{ 
-        setIncomeObj({... incomeObj,[e.target.name]: e.target.value});
+        setIncomeObj({incomeObj,[e.target.name]: e.target.value});
     }
 
     let onSubmitIncomeEvent = () =>{
@@ -63,7 +63,7 @@ let totalExpense = useContext(ExpenseContext); // coming from "Expense context"
 /******************************************Function Events for Expense**********************************************************/
 
 let updateFieldExpense = e =>{
-    setExpenseObj({... expenseObj,[e.target.name]: e.target.value});
+    setExpenseObj({expenseObj,[e.target.name]: e.target.value});
 }
 
 
