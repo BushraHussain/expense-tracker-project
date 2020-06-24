@@ -18,37 +18,29 @@ function Front()
 
 /******************************************Function Events for income ********************************************************** */
 
-    let updateFields = e =>{
+    let updateFields = e =>{ 
         setIncomeObj({... incomeObj,[e.target.name]: e.target.value});
     }
 
+    let onSubmitIncomeEvent = () =>{
+             if(incomeObj.amount===" ")
+             {
+                alert (`Please Enter Amount`);
+             }
 
-
-        let onSubmitIncomeEvent = () => {
-
-
-
-                if(incomeObj.amount===" ")
-                {
-                    alert (`Please Enter Amount`);
-
-                }
-
-                else if (incomeObj.amount<0)
-                {
+        else if (incomeObj.amount<0)
+            {
 
                 alert (`Please Enter Positive value `);
-                }
-
-
-                else if (isNaN(incomeObj.amount))
+            }
+        
+        else if (isNaN(incomeObj.amount))
                 {
                     alert (`Please Enter values `);
                 }
 
-                else  {
-
-                        totalIncome[1](totalIncome[0]+ parseInt(incomeObj.amount));
+        else  {
+                       totalIncome[1](totalIncome[0]+ parseInt(incomeObj.amount));
                         return false;
                     }
 
