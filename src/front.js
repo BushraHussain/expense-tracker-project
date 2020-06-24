@@ -16,7 +16,7 @@ function Front()
 
     let totalIncome = useContext(IncomeContext); // Total income -> coming from "income context" 
 
-/******************************************Function Events********************************************************** */
+/******************************************Function Events for income ********************************************************** */
 
     let updateFields = e =>
     {
@@ -61,7 +61,7 @@ function Front()
 
 
 
-/****************************************expense***************************** */
+/****************************************Expense***************************** */
 
 
 
@@ -72,7 +72,7 @@ let [expenseObj, setExpenseObj] = useState({  // expense object
 
 let totalExpense = useContext(ExpenseContext); // coming from "Expense context"
 
-/******************************************Function Events Expense**********************************************************/
+/******************************************Function Events for Expense**********************************************************/
 
 let updateFieldExpense = e =>
 {
@@ -118,6 +118,7 @@ let Balance = useContext(BalanceContext);
 
 Balance[1] ( totalIncome[0] - totalExpense[0]) ;
 
+/**********************return ****************************************** */
 
 return(
 
@@ -135,22 +136,22 @@ return(
 
 
 
-    <div class="table" >      
-            <div class="row">
-                <div class="column">
-                <h2 class="h2">Total Income</h2>
-                <p>{totalIncome} </p>
+                <div class="table" >      
+                        <div class="row">
+                            <div class="column">
+                            <h2 class="h2">Total Income</h2>
+                            <p>{totalIncome} </p>
+                        </div>
+                        <div class="column">
+                        <h2 class="h2">Total Expense</h2>
+                        <p>{totalExpense}</p>
+                    </div>
+                </div>
             </div>
-             <div class="column">
-            <h2 class="h2">Total Expense</h2>
-            <p>{totalExpense}</p>
-         </div>
-    </div>
-</div>
 
             <h3 class="h3b"> Balance : {Balance}</h3>
 
-            <h3 class="h3">Want to Add Income ?</h3>
+            <h3 class="h3">Want to Add Income ??</h3>
                 
 				<div class="wrap-input100 " >
 					<span class="label-input100">Title</span>
@@ -170,7 +171,7 @@ return(
                 <button class="button button2" type="button" onClick={()=>{onSubmitIncomeEvent(); return false;}}> Add Income</button>
 
            
-            <h3 class="h3">Want to Add Expense ?</h3>
+            <h3 class="h3">Want to Add Expense ??</h3>
 
                 <div class="wrap-input100 " >
 					<span class="label-input100">Title</span>
