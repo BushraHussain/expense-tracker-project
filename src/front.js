@@ -118,20 +118,16 @@ return(
             
 
 
-
-
-                <div class="table" >      
-                        <div class="row">
-                            <div class="column">
-                            <h2 class="h2">Total Income</h2>
-                            <p>{totalIncome} </p>
-                        </div>
-                        <div class="column">
-                        <h2 class="h2">Total Expense</h2>
-                        <p>{totalExpense}</p>
-                    </div>
+            <div class="inc-exp-container">
+                <div>
+                <h2>Income</h2>
+                <h3 id="money-plus" class="money plus h3Values">{totalIncome}</h3>
                 </div>
-            </div>
+                <div>
+                <h2>Expense</h2>
+                <h3 id="money-minus" class="money minus h3Values">{totalExpense}</h3>
+                </div>
+       </div>
 
             <h3 class="h3b"> Balance : {Balance}</h3>
 

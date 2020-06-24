@@ -716,3 +716,35 @@ color:#4CAF50;
   display: table;
   clear: both;
 }
+
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #4CAF50;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 2px solid #dedede;
+  
+}
+
+.h3Values
+{
+  color:grey;
+}
