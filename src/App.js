@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
-
-
 import IncomeContext from './incomeContext';
-
 import ExpenseContext from './expenseContext';
-
 import BalanceContext from './balanceContext';
 import Front from './front';
-
-
-
 
 
 function App() {
