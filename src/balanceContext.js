@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 
 let BalanceContext = createContext(23) // default value of balance context
 

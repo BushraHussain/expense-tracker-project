@@ -32,7 +32,7 @@ function Front()
 
 
 
-                if(incomeObj.amount==" ")
+                if(incomeObj.amount===" ")
                 {
                     alert (`Please Enter Amount`);
 
@@ -76,17 +76,14 @@ let totalExpense = useContext(ExpenseContext); // coming from "Expense context"
 
 let updateFieldExpense = e =>
 {
-    setExpenseObj({
-        ... expenseObj,
-        [e.target.name]: e.target.value
-    });
+    setExpenseObj({... expenseObj,[e.target.name]: e.target.value});
 }
 
 
 let onSubmitExpenseEvent = () => {
 
 
-    if(incomeObj.amount==" ")
+    if(incomeObj.amount===" ")
     {
         alert (`Please Enter Amount`);
     }

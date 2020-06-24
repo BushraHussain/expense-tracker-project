@@ -18,10 +18,7 @@ function Income ()
 
     let updateFields = e =>
     {
-        setIncomeObj({
-            ... incomeObj,
-            [e.target.name]: e.target.value
-        });
+        setIncomeObj({... incomeObj,[e.target.name]: e.target.value});
     }
 
 

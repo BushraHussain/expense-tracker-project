@@ -13,13 +13,9 @@ function Expense ()
 
 /******************************************Function Events**********************************************************/
 
-    let updateFields = e =>
-    {
-        setExpenseObj({
-            ... expenseObj,
-            [e.target.name]: e.target.value
-        });
-    }
+    let updateFields = e => {
+        setExpenseObj({... expenseObj, [e.target.name]: e.target.value});
+      }
 
 
     let onSubmitExpenseEvent = () => {
