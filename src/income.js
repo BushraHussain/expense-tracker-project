@@ -42,6 +42,17 @@ return (
          <h1>Total income : {totalIncome[0]}</h1>
 
 
+         <label>
+           Description 
+           <input type="text" placeholder ="description" value={incomeObj.title} name="title" onChange={updateFields}></input>
+        </label>
+
+        <br />
+
+        <label>
+           Income Amount 
+           <input type="number" step="1" placeholder ="amount" value={incomeObj.amount} name="amount" onChange={updateFields}></input>
+        </label>
   
         
         

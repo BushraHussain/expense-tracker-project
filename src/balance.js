@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import ExpenseContext from './expenseContext';
 import IncomeContext from './incomeContext';
 import BalanceContext from './balanceContext';
