@@ -116,6 +116,7 @@ return(
                 Expense Tracker
             </span>
             
+            <h3 class="h3b"> Your Balance : {Balance}</h3>
 
 
             <div class="inc-exp-container">
@@ -129,7 +130,7 @@ return(
                 </div>
        </div>
 
-            <h3 class="h3b"> Balance : {Balance}</h3>
+           
 
             <h3 class="h3">Want to Add Income ??</h3>
                 
